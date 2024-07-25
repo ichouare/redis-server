@@ -8,9 +8,10 @@ function ClientSerializer (data)  {
 let index_of_sign = data.indexOf("$");
 if(index_of_sign == -1)
         return "not exists";
-    console.log("\n", data.to_string().slice(index_of_sign + 1));
-    // let data_length = parseInt(data[index_of_sign + 1 ])
-    // console.log(data_length)
+    str = data.toString().slice(index_of_sign + 1);
+    console.log(str[index_of_sign])
+    let data_length = parseInt(str[index_of_sign])
+    console.log(data_length)
 
 
 
